@@ -1,7 +1,6 @@
 # 1. ETAPA DE CONSTRUCCIÓN (BUILD)
 # Usamos una imagen base de Maven para compilar el código.
-FROM maven:3.9.5-eclipse-temurin-17-full AS build
-
+FROM maven:3.9-jdk-17 AS build
 # Establece el directorio de trabajo dentro del contenedor
 WORKDIR /app
 
